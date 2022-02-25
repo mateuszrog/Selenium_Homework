@@ -32,30 +32,3 @@ class BaseCommand:
         Elements = re.findall(r'\d+', self.local_driver.find_element(By.XPATH, element).text)
         Sum = '.'.join(Elements)
         return Sum
-
-###########################
-"""
-
-    def dropdown_price_high_to_low(self, element):
-        self.wait.until(EC.element_to_be_clickable((By.XPATH, element)))
-        self.local_driver.find_element(By.XPATH, element).click()
-
-    def add_to_card(self, element):
-        self.wait.until(EC.element_to_be_clickable((By.XPATH, element)))
-        self.local_driver.find_element(By.XPATH, element).click()
-
-    def go_to_card_and_checkout(self, element):
-        self.wait.until(EC.element_to_be_clickable((By.XPATH, element)))
-        self.local_driver.find_element(By.XPATH, element).click()
-
-    def send_informations(self, element, text):
-        self.wait.until(EC.visibility_of_element_located((By.XPATH, element)))
-        self.local_driver.find_element(By.XPATH, element).send_keys(text)
-
-"""
-
-
-
-
-
-

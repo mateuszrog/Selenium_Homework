@@ -17,9 +17,3 @@ class Field:
     items = "//div[@class='summary_subtotal_label']"
     total = "//div[@class='summary_total_label']"
     get_tax = "//div[@class='summary_tax_label']"
-
-"""
-#item_total = "//*[@id='checkout_summary_container']/div/div[2]/div[5]/text()[2]"
-#item_total = "//div[@class='summary_subtotal_label'][contains(text()='53.97']"
-"""
-

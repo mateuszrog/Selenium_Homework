@@ -63,8 +63,6 @@ class HelloWorldTest(unittest.TestCase):
 
         substract = float(self.base_command.get_value(Field.total)) - float(self.base_command.get_value(Field.items))
 
-        #Substract = round(substract, 1)
-
         self.assertEqual(substract, float(self.base_command.get_value(Field.get_tax)))
 
 
@@ -77,31 +75,3 @@ class HelloWorldTest(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-
-"""
-        self.base_command.dropdown_price_high_to_low(Field.dropdown)
-        self.base_command.dropdown_price_high_to_low(Field.high_to_low)
-
-        self.base_command.add_to_card(Field.add_first_to_card)
-        self.base_command.add_to_card(Field.add_second_to_card)
-        self.base_command.add_to_card(Field.add_third_to_card)
-
-        self.base_command.go_to_card_and_checkout(Field.card)
-        time.sleep(3)
-        self.base_command.go_to_card_and_checkout(Field.checkout)
-
-        self.base_command.clear_element(Field.first_name)
-        self.base_command.send_informations(Field.first_name, "joe")
-
-        self.base_command.clear_element(Field.last_name)
-        self.base_command.send_informations(Field.last_name, "black")
-
-        self.base_command.clear_element(Field.postal_code)
-        self.base_command.send_informations(Field.postal_code, "585858")
-
-        self.base_command.click_element(Field.cont_page)
-
-        self.assertEqual("53.97", self.base_command.get_value(Field.items))
-        self.assertEqual("58.29", self.base_command.get_value(Field.total))
-        self.assertEqual("4.32", self.base_command.get_value(Field.get_tax))
-"""
